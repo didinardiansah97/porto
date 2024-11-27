@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  color: aliceblue;
+  background: #081b29;
+}
+
+.roboto {
+  font-family: "Roboto Slab", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.sevillana {
+  font-family: "Sevillana", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 10px;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.nama {
+  text-decoration: none;
+  color: azure;
+  font-size: 25px;
+  font-weight: 600;
+  /* font-family: sans-serif; */
+}
+
+.nav a {
+  text-decoration: none;
+  color: azure;
+  font-size: 17px;
+  font-family: "Gill Sans";
+  margin-right: 30px;
+  transition: 0.5s;
+}
+
+
+.nav a:hover,
+.nav a.aktif {
+  color: rgb(30, 143, 255);
+}
+.back {
+  position: relative;
+  display: flex;
+  align-items: center;
+  opacity: 60%;
+  background-position: center;
+  background: url(yess.png) no-repeat;
+  height: 100vh;
+  padding: 0 10%;
+}
+
+.haji {
+  position: relative;
+  max-width: 600px;
+}
+
+.haji h1 {
+  font-size: 45px;
+  font-weight: 600;
+}
+
+.haji h3 {
+  font-size: 32px;
+  font-weight: 600;
+  color: #00abf0;
+}
+
+.kuk {
+  display: flex;
+  width: 270px;
+  height: 50px;
+  justify-content: space-between;
+}
+.kuk a {
+  position: relative;
+  display: inline-flex;
+  text-decoration: none;
+  background-color: #00abf0;
+  width: 110px;
+  border: 2px solid#00abf0;
+  border-radius: 10px;
+  transition: 0.5s;
+  color: rgb(0, 0, 0);
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.kuk a:nth-child(2) {
+  background-color: transparent;
+  color: #00abf0;
+}
+
+.kuk a:nth-child(2):hover {
+  color: #081b29;
+}
+
+.kuk a:nth-child(2)::before {
+  background: #00abf0;
+}
+
+.kuk a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #081b29;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+.kuk a:hover::before {
+  width: 100%;
+}
+
+.iconh {
+  position: absolute;
+  bottom: 40px;
+  width: 170px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.iconh a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #00abf0;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+.iconh a:hover::before {
+  width: 100%;
+}
+
+.iconh a {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: 2px solid #00abf0;
+  border-radius: 50%;
+  font-size: 20px;
+  color: #00abf0;
+  text-decoration: none;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.iconh a:hover {
+  color: black;
+}
+
+.span {
+  position: relative;
+  top: 0;
+  left: 100px;
+  width: 999px;
+  height: 100%;
+  background: transparent;
+  transition: 0.5s;
+}
+
+.span:hover {
+  background-color: #081b29;
+  opacity: 0.5;
+}
+
+
